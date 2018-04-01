@@ -33,12 +33,14 @@ before_deploy:
     - ls -la
     - pwd
     - tar cvfz build.tar.gz 1 2 3
+    - touch butt
 deploy:
   provider: releases
   api_key:
     secure: h55aQkKt3/Vz5jqAWGM8aX1fdbDDLdmEp6CSXgiBp2PiaaF2lHWmb35R9Bb/GRLKo0HBhWcZq7czrRA9SyVFIw0LU0s020egUbG2nvsMH146Hjy087j6h6tLT1hM4xSZPHMZHR3DIPXccsnCc2Mrlgqmc62YadOHd7KL+WmYYQ7Y/oZIRQiCxZkcg9bjcs1ITmo+3fNPHp4ZeZjvAkS6DdGKPahmeWPeiFtT8SzBEN234DNwSmNYxKzfLQG4khjJwTnV62SK4hCga45tG6bYqJ6LAizRW7/RErFZCz9fQvuL7rITIH+L9wllDD6RGhr/Pi8sjm66uTnyEaihtNCrplQUZZEUbkU4B8iXbpxS34EGWwQ9KWto85lD5BTYw8LPKro3JTFZ6zv8C3+jT+ee85K9Z1z8ljvcsHOcwLs223ngKhi6LdjiItN8nOT7Oyc5vtVLEYX5ynvgYQjr/xdeWFbLHaTMkY4+R75ZZpwHPD9FQPlYPmWwb3Bc2RazDa2iEYa1vQyKGA+k0XE7XPHl98shA4LeOxE8ZqxMIOoX+cQ02K5Fw+vzo2D0FseN0Sn9H+5iIQnAA6kvP7hm88xUhNDGqiyTp5AJvIkoJvaZqYAXVMBRG9Ph06FYehr3xkSuz2M7k8jm36RcFpRivWbo2EYppkZSJPRsvFCnNLErvog=
   file:
     - build/build.tar.gz
+    - butt
   skip_cleanup: true
   on:
     repo: nnamon/test-travis
