@@ -1,6 +1,7 @@
 #!/bin/sh
 
-echo 1 > 1
-echo 2 > 2
-echo 3 > 3
+mkdir src
+echo 1 > src/1
+echo 2 > src/2
+echo 3 > src/3
 echo DONE

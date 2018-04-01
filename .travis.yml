@@ -32,6 +32,7 @@ script:
 before_deploy:
     - ls -la
     - pwd
+    - cd src
     - tar cvfz build.tar.gz 1 2 3
 deploy:
   provider: releases
